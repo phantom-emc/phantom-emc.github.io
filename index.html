@@ -68,7 +68,16 @@
     .person { display: block; font-weight: 730; font-size: 1.08rem; }
     .project { margin-top: .16rem; color: var(--muted); }
     .detail { margin-top: .13rem; color: #55416d; font-size: .9rem; }
-    .alumni, .contact { padding-block: clamp(3rem, 6vw, 5rem); border-top: 1px solid var(--line); }
+    .collaborators { background: #fff; }
+    .collaborator-departments {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+      gap: 1.5rem 2rem;
+    }
+    .collaborator-departments h4 { margin: 0 0 .35rem; line-height: 1.25; }
+    .collaborator-list { list-style: none; margin: 0; padding: 0; color: var(--muted); }
+    .collaborator-list li + li { margin-top: .2rem; }
+    .alumni, .collaborators, .contact { padding-block: clamp(3rem, 6vw, 5rem); border-top: 1px solid var(--line); }
     .alumni-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
     .alumni-grid li { border: 1px solid var(--line); border-radius: .75rem; padding: 1.15rem 1.3rem; background: #fff; }
     footer { background: #131e3b; color: #fff; }
@@ -93,6 +102,7 @@
       <nav aria-label="Main navigation">
         <a href="#team">Team &amp; projects</a>
         <a href="#alumni">Alumni</a>
+        <a href="#collaborators">Collaborators</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -232,6 +242,70 @@
             <p class="project">AI-based phenotyping of soft tissue tumours using H&amp;E-stained whole-slide images.</p>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="collaborators" id="collaborators" aria-labelledby="collaborators-title">
+      <div class="wrap">
+        <h2 id="collaborators-title" class="section-title">Collaborators</h2>
+        <section class="role" aria-labelledby="erasmus-collaborators-title">
+          <h3 id="erasmus-collaborators-title">Erasmus MC collaborators</h3>
+          <div class="collaborator-departments">
+            <div>
+              <h4>Department of Pathology and Clinical Bioinformatics</h4>
+              <ul class="collaborator-list" role="list">
+                <li>Jan von der Thusen</li>
+                <li>Andrew Stubbs</li>
+                <li>Carolien van Deurzen</li>
+                <li>Michail Doukas</li>
+                <li>Yunlei Li</li>
+                <li>Rob Verdijk</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Department of Radiology and Nuclear Medicine</h4>
+              <ul class="collaborator-list" role="list">
+                <li>Martijn Starmans</li>
+                <li>Stefan Klein</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Department of Urology</h4>
+              <ul class="collaborator-list" role="list">
+                <li>Tahlita Zuiverloon</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Department of Gastroenterology &amp; Hepatology</h4>
+              <ul class="collaborator-list" role="list">
+                <li>Judith Honing</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Department of Surgery</h4>
+              <ul class="collaborator-list" role="list">
+                <li>Kees Verhoef</li>
+                <li>Denise Hilling</li>
+                <li>Robert Minnee</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Department of Pulmonary Medicine</h4>
+              <ul class="collaborator-list" role="list">
+                <li>Anne-Marie Dingemans</li>
+                <li>Jules Derks</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="role" aria-labelledby="external-collaborators-title">
+          <h3 id="external-collaborators-title">External collaborators</h3>
+          <ul class="collaborator-list" role="list">
+            <li>University of Oxford</li>
+            <li>Chung-Ang University</li>
+            <li>University of Oslo</li>
+            <li>Queen Mary University of London</li>
+          </ul>
+        </section>
       </div>
     </section>
     <section class="contact" id="contact" aria-labelledby="contact-title">
