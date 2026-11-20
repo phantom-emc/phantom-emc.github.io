@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Biography and research funding for Dr. Farhan Akram, assistant professor and PHANTOM group leader at Erasmus MC.">
+  <meta name="theme-color" content="#f6f7fa">
+  <title>Dr. Farhan Akram | PHANTOM</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #111a39;
+      --muted: #44506b;
+      --purple: #602a91;
+      --line: #d9dce8;
+      color: var(--ink);
+      font: 100%/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body, h1, h2, h3, p { margin: 0; }
+    a { color: inherit; text-underline-offset: .2em; }
+    a:hover { color: var(--purple); }
+    a:focus-visible { outline: 3px solid #087783; outline-offset: 4px; }
+    .wrap { width: min(60rem, 100% - 3rem); margin-inline: auto; }
+    .site-header { border-bottom: 1px solid var(--line); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .6rem 1rem; min-height: 4.4rem; padding-block: .8rem; }
+    .wordmark { font-weight: 850; letter-spacing: .13em; text-decoration: none; }
+    .team-link { font-size: .95rem; font-weight: 650; }
+    .intro { background: radial-gradient(ellipse at 0% 100%, #eae1f6, transparent 65%), radial-gradient(ellipse at 100% 0%, #e1f1f2, transparent 60%), #f6f7fa; }
+    .profile-header { display: grid; grid-template-columns: minmax(0, 1fr) clamp(7rem, 17vw, 11rem); gap: 1.5rem; align-items: center; padding-block: clamp(2.5rem, 7vw, 5.5rem); }
+    .role { color: #542681; font-weight: 700; margin-bottom: .65rem; }
+    h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 500; letter-spacing: -.04em; line-height: 1.08; }
+    h1 { font-size: clamp(2.65rem, 7vw, 5rem); }
+    h2 { font-size: clamp(2.25rem, 5vw, 3.5rem); }
+    .appointment { color: var(--muted); font-size: 1.12rem; margin-top: .85rem; }
+    .portrait { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; object-position: center 35%; border-radius: .85rem; background: #fff; }
+    .content-block { padding-block: clamp(2.6rem, 6vw, 4rem); border-top: 1px solid var(--line); }
+    .biography { max-width: 72ch; color: var(--muted); margin-top: 1.25rem; overflow-wrap: anywhere; }
+    .biography p + p { margin-top: 1rem; }
+    .funding { background: #f6f7fa; }
+    .grants { list-style: none; padding: 0; margin: 1.4rem 0 0; }
+    .grants li { padding-block: 1.15rem; border-top: 1px solid var(--line); }
+    .grants h3 { font-size: 1.12rem; line-height: 1.35; }
+    .grant-project { color: var(--muted); margin-top: .3rem; }
+    .grant-meta { color: #55416d; font-size: .9rem; margin-top: .3rem; }
+    .grant-budget { color: var(--muted); font-size: .9rem; margin-top: .15rem; }
+    footer { background: #131e3b; color: #fff; padding-block: 1.4rem; }
+    @media (max-width: 35rem) {
+      .wrap { width: calc(100% - 2rem); }
+      .profile-header { grid-template-columns: 1fr; }
+      .portrait { max-width: 8rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="index.html">PHANTOM</a>
+      <a class="team-link" href="index.html#team">Back to Team &amp; projects</a>
+    </div>
+  </header>
+  <main>
+    <header class="intro">
+      <div class="wrap profile-header">
+        <div>
+          <p class="role">Group leader</p>
+          <h1>Dr. Farhan Akram</h1>
+          <p class="appointment">Assistant Professor<br>Department of Pathology and Clinical Bioinformatics, Erasmus MC</p>
+        </div>
+        <img class="portrait" src="Akram.jpg" width="176" height="176" alt="">
+      </div>
+    </header>
+    <section class="content-block" aria-labelledby="biography">
+      <div class="wrap">
+        <h2 id="biography">Biography</h2>
+        <div class="biography">
+          <p>Dr. Farhan Akram is an assistant professor in the Department of Pathology and Clinical Bioinformatics at Erasmus MC in Rotterdam, where he leads the Computational Pathology Group. He develops AI models that analyse whole-slide images to classify tumours, estimate recurrence risk and predict treatment response. His recent studies have examined whether lung tumour biopsies can help predict recurrence after surgery and whether routine histology can identify molecular subtypes of uveal melanoma.</p>
+          <p>As principal investigator of AI3PATH, Dr. Akram studies how three-dimensional tissue architecture can inform tumour assessment. He also investigates whether combining pathology images with radiology, spatial transcriptomics and clinical data improves predictions, and contributes to a project using AI to predict kidney transplant rejection.</p>
+          <p>Dr. Akram earned his PhD cum laude from Universitat Rovira i Virgili in 2017, where he developed active contour methods for image segmentation. He held postdoctoral appointments at A*STAR in Singapore and Khalifa University in Abu Dhabi, and developed computer vision methods for microscopy at mil-kin Inc. in Tokyo. He holds a University Teaching Qualification from Erasmus University Rotterdam and supervises graduate researchers in computational pathology.</p>
+        </div>
+      </div>
+    </section>
+    <section class="content-block funding" aria-labelledby="funding">
+      <div class="wrap">
+        <h2 id="funding">Research funding</h2>
+        <ul class="grants" role="list">
+          <li>
+            <h3>Cancer Research UK</h3>
+            <p class="grant-project">Non-invasive early detection of recurrence in primary hepatocellular carcinoma using multimodal AI for post-treatment NHS surveillance.</p>
+            <p class="grant-meta">2026–2030 · Co-investigator</p>
+            <p class="grant-budget">Total project budget €578,000 · No individual allocation</p>
+          </li>
+          <li>
+            <h3>Horizon · RENAI</h3>
+            <p class="grant-project">Responsible AI Infrastructures for Scientific Excellence.</p>
+            <p class="grant-meta">2026–2029 · Co-investigator</p>
+            <p class="grant-budget">Total project budget €10,000,000 · Team allocation €225,000</p>
+          </li>
+          <li>
+            <h3>Research Council of Norway · SPOTMEL</h3>
+            <p class="grant-project">Advanced 3D imaging and deep learning detection for uveal melanoma.</p>
+            <p class="grant-meta">2026–2030 · Co-investigator and work package leader</p>
+            <p class="grant-budget">Total project budget NOK 12,000,000 · Team allocation approximately €62,500</p>
+          </li>
+          <li>
+            <h3>Erasmus MC Starting Grant · AI3PATH</h3>
+            <p class="grant-project">AI in 3D pathology.</p>
+            <p class="grant-meta">2025–2030 · Principal investigator</p>
+            <p class="grant-budget">Total project budget €124,000</p>
+          </li>
+          <li>
+            <h3>Erasmus MC breakthrough funds</h3>
+            <p class="grant-project">AI-based prediction of kidney transplant rejection.</p>
+            <p class="grant-meta">2024–2027 · Co-applicant and work package leader</p>
+            <p class="grant-budget">Total project budget €508,000 · Team allocation €285,856</p>
+          </li>
+          <li>
+            <h3>EMC-TKI · Interceptor</h3>
+            <p class="grant-project">AI analysis of histopathology images from biopsies to predict response to neoadjuvant therapy.</p>
+            <p class="grant-meta">2024–2027 · Co-applicant and work package leader</p>
+            <p class="grant-budget">Total project budget €654,000 · Team allocation €348,845</p>
+          </li>
+          <li>
+            <h3>Hanarth Fonds · Triple-negative breast cancer</h3>
+            <p class="grant-project">Predicting response to neoadjuvant chemotherapy using integrated diagnostics.</p>
+            <p class="grant-meta">2023–2027 · Co-investigator and work package leader</p>
+            <p class="grant-budget">Total project budget €454,689 · Team allocation €368,849</p>
+          </li>
+          <li>
+            <h3>Hanarth Fonds · INTHYM</h3>
+            <p class="grant-project">AI for histopathological classification and recurrence prediction of thymic epithelial tumours.</p>
+            <p class="grant-meta">2023–2026 · Co-investigator and work package leader</p>
+            <p class="grant-budget">Total project budget €398,769 · Team allocation €231,311</p>
+          </li>
+          <li>
+            <h3>ISIDORe-JRA · PATH2XNAT</h3>
+            <p class="grant-project">COVID-19 pathomics meets XNAT.</p>
+            <p class="grant-meta">2023–2025 · Co-investigator</p>
+            <p class="grant-budget">Total project budget €280,000 · Team allocation €38,000</p>
+          </li>
+          <li>
+            <h3>Hanarth Fonds · PNET</h3>
+            <p class="grant-project">Histogenomic biomarkers for diagnosing lung neuroendocrine tumours from biopsies using multiplex immunohistochemistry and AI-assisted histomorphological classification.</p>
+            <p class="grant-meta">2022–2024 · Co-investigator</p>
+            <p class="grant-budget">Total project budget €399,519 · Team allocation €248,177</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">PHANTOM research group</div>
+  </footer>
+</body>
+</html>
