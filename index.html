@@ -50,6 +50,21 @@
     .role h3 { font-size: 1.23rem; margin-top: .2rem; }
     .people { list-style: none; padding: 0; margin: 0; }
     .people li + li { margin-top: .95rem; padding-top: .95rem; border-top: 1px solid var(--line); }
+    .member-profile {
+      --portrait-size: clamp(3.5rem, 12vw, 6rem);
+      display: grid;
+      grid-template-columns: var(--portrait-size) minmax(0, 1fr);
+      gap: clamp(.65rem, 2vw, 1.25rem);
+      align-items: center;
+    }
+    .member-photo {
+      width: var(--portrait-size);
+      height: var(--portrait-size);
+      object-fit: cover;
+      object-position: center 35%;
+      border-radius: .65rem;
+      background: var(--paper);
+    }
     .person { display: block; font-weight: 730; font-size: 1.08rem; }
     .project { margin-top: .16rem; color: var(--muted); }
     .detail { margin-top: .13rem; color: #55416d; font-size: .9rem; }
@@ -99,54 +114,84 @@
         <h2 id="team-title" class="section-title">Team &amp; projects</h2>
         <section class="role" aria-labelledby="leader-title">
           <h3 id="leader-title">Group leader</h3>
-          <div>
-            <span class="person">Farhan Akram</span>
-            <p class="project">Assistant Professor, Department of Pathology and Clinical Bioinformatics</p>
+          <div class="member-profile">
+            <img class="member-photo" src="Akram.jpg" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div>
+              <span class="person">Farhan Akram</span>
+              <p class="project">Assistant Professor, Department of Pathology and Clinical Bioinformatics</p>
+            </div>
           </div>
         </section>
         <section class="role" aria-labelledby="postdocs-title">
           <h3 id="postdocs-title">Postdoctoral researchers</h3>
           <ul class="people" role="list">
-            <li>
-              <span class="person">Muhammad Adeel Azam</span>
-              <p class="project">AI-based prediction of kidney rejection using laser speckle contrast imaging (LSCI).</p>
+            <li class="member-profile">
+              <img class="member-photo" src="Adeel.jpg" alt="" width="96" height="96" loading="lazy" decoding="async">
+              <div>
+                <span class="person">Muhammad Adeel Azam</span>
+                <p class="project">AI-based prediction of kidney rejection using laser speckle contrast imaging (LSCI).</p>
+              </div>
             </li>
-            <li>
-              <span class="person">Tongjie Wang</span>
-              <p class="project">AI-PRECISE. AI-driven molecular subtype classification of urothelial cancer from histopathology images for precision medicine.</p>
+            <li class="member-profile">
+              <img class="member-photo" src="Tongjie.png" alt="" width="96" height="96" loading="lazy" decoding="async">
+              <div>
+                <span class="person">Tongjie Wang</span>
+                <p class="project">AI-PRECISE. AI-driven molecular subtype classification of urothelial cancer from histopathology images for precision medicine.</p>
+              </div>
             </li>
           </ul>
         </section>
         <section class="role" aria-labelledby="phd-title">
           <h3 id="phd-title">PhD students</h3>
           <ul class="people" role="list">
-            <li>
-              <span class="person">Teodora-Elena Trandafir</span>
-              <p class="project">AI-based diagnosis and prognosis of lung neuroendocrine neoplasms (NENs).</p>
+            <li class="member-profile">
+              <img class="member-photo" src="Teodora.png" alt="" width="96" height="96" loading="lazy" decoding="async">
+              <div>
+                <span class="person">Teodora-Elena Trandafir</span>
+                <p class="project">AI-based diagnosis and prognosis of lung neuroendocrine neoplasms (NENs).</p>
+              </div>
             </li>
-            <li>
-              <span class="person">Anna Salut Esteve Dominguez</span>
-              <p class="project">AI for histopathological classification and recurrence prediction of thymic epithelial tumours.</p>
+            <li class="member-profile">
+              <img class="member-photo" src="Anna.jpg" alt="" width="96" height="96" loading="lazy" decoding="async">
+              <div>
+                <span class="person">Anna Salut Esteve Dominguez</span>
+                <p class="project">AI for histopathological classification and recurrence prediction of thymic epithelial tumours.</p>
+              </div>
             </li>
-            <li>
-              <span class="person">Soogyeong Shin</span>
-              <p class="project">AI-based analysis of biopsy histopathology images to predict response to neoadjuvant therapy.</p>
+            <li class="member-profile">
+              <img class="member-photo" src="Soogyeong.jpg" alt="" width="96" height="96" loading="lazy" decoding="async">
+              <div>
+                <span class="person">Soogyeong Shin</span>
+                <p class="project">AI-based analysis of biopsy histopathology images to predict response to neoadjuvant therapy.</p>
+              </div>
             </li>
-            <li>
-              <span class="person">Koen Kwakkenbos</span>
-              <p class="project">Predicting response to neoadjuvant chemotherapy in triple-negative breast cancer using integrated diagnostics.</p>
+            <li class="member-profile">
+              <img class="member-photo" src="Koen.jpg" alt="" width="96" height="96" loading="lazy" decoding="async">
+              <div>
+                <span class="person">Koen Kwakkenbos</span>
+                <p class="project">Predicting response to neoadjuvant chemotherapy in triple-negative breast cancer using integrated diagnostics.</p>
+              </div>
             </li>
-            <li>
-              <span class="person">Karthik Prathaban</span>
-              <p class="project">Artificial Intelligence for Integrated Diagnostics (AIID). Combining radiology and pathology for soft tissue tumours.</p>
+            <li class="member-profile">
+              <img class="member-photo" src="Karthik.jpg" alt="" width="96" height="96" loading="lazy" decoding="async">
+              <div>
+                <span class="person">Karthik Prathaban</span>
+                <p class="project">Artificial Intelligence for Integrated Diagnostics (AIID). Combining radiology and pathology for soft tissue tumours.</p>
+              </div>
             </li>
-            <li>
-              <span class="person">Anne-Elise de Groen</span>
-              <p class="project">Predicting neoplastic progression in Barrett’s oesophagus.</p>
+            <li class="member-profile">
+              <img class="member-photo" src="Anne-Elise.jpg" alt="" width="96" height="96" loading="lazy" decoding="async">
+              <div>
+                <span class="person">Anne-Elise de Groen</span>
+                <p class="project">Predicting neoplastic progression in Barrett’s oesophagus.</p>
+              </div>
             </li>
-            <li>
-              <span class="person">Sepideh Bahri Hampa</span>
-              <p class="project">AI-PRECISE. AI-driven molecular subtype classification of urothelial cancer from histopathology images for precision medicine.</p>
+            <li class="member-profile">
+              <img class="member-photo" src="Sepideh.png" alt="" width="96" height="96" loading="lazy" decoding="async">
+              <div>
+                <span class="person">Sepideh Bahri Hampa</span>
+                <p class="project">AI-PRECISE. AI-driven molecular subtype classification of urothelial cancer from histopathology images for precision medicine.</p>
+              </div>
             </li>
           </ul>
         </section>
